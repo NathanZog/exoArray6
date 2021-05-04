@@ -22,14 +22,12 @@ chiffres = chiffres2.split();
 let tab = [];
 tab.push("elem1","elem2","elem3","elem4","elem5","elem6","elem7","elem8","elem9","elem10");
 console.log(tab);
-let item = tab.indexOf("elem7");
-console.log(item);
-tab.splice(5,1);
+console.log(tab.indexOf("elem7"));
+tab.splice(6,1);
 console.log(tab);
 
 let tabclasse = [];
 tabclasse.push("Mouna","Ilias El", "Agim", "Kevin", "Antoine", "Seifidin", "Chris", "Haroune", "Elvis", "Nasila", "Van Hoa", "Jean", "Stan", "Ilias D", "Nathan", "Adil", "Ali", "Damien", "Yassine", "Lira");
-let random = Math.floor(Math.random() * tabclasse.length);
-console.log(tabclasse[random]);
-tabclasse.splice(14,1)
+console.log(tabclasse[Math.floor(Math.random() * tabclasse.length)]);
+tabclasse.splice(tabclasse.indexOf("Nathan"),1)
 console.log(tabclasse)
